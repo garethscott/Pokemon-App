@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body, html {
+  height: 100vh;
+  margin: 0;
+  background-color: #B4CDFF;
+  width: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-container {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.drop-down {
+  position: fixed;
+  top: 143px;
+  width: 50vw;
+  height: 700px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background-color: white;
+  overflow-y: scroll;
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 25px;
+  background-image: url("https://assets.pokemon.com//assets/cms2/img/misc/virtual-backgrounds/sword-shield/pokemon-in-the-wild.png");
+}
+
+h3:hover {
+  color: blue;
+}
+
+.pokecard {
+  font-family: 'Anton', sans-serif;
+  border: 5px solid red;
+  background-color: yellow;
+  color: blue;
+  border-radius: 25px;
+  padding: 10px;
+  text-align: center;
+  margin: 5px;
+}
+
+.searchlistcontainer {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 50vw;
+  align-items: stretch;
+  justify-content: space-evenly;
+}
+
+input {
+  font-size: 20px;
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+  border-radius: 25px;
+  outline:none
+}
+
+button {
+  background-color: yellow;
+  color: blue;
+  border: 2px solid red;
+  font-size: 20px;
+  font-family: 'Anton', sans-serif;
+  cursor: pointer;
+  border-radius: 25px;
+  outline: none;
+}
+
+.search-wrapper {
+  width: 100vw;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.divide {
+  height: 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.warning {
+  font-family: 'Bebas Neue';
+  text-align: center;
+  font-size: 50px;
+  margin: 5px;
+  color: red;
 }
